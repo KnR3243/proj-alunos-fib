@@ -1,20 +1,12 @@
-/* Servidor Node (BACKEND) - Leandro Luis Pauro
-Explicando o que cada rota faz: 
-1. GET / -> entrega o arquivo index.html (o frontend) ao navegador;
-2. GET /api/alunos  -> consulta o banco e devolve os registros em formato JSON.
-Quem transforma os dados em tabela é o navegador (nosso exemplo é a página index.html).
 
-Para diferenciar: 
-GET é usado para buscar dados (não altera nada no sistema);
-POST é usado para enviar dados (altera o sistema, insere, atualiza ou deleta algo). 
-*/
 
-//Importação dos módulos
+// TESTE DE COMMIT 
+
 const http = require('http');
 const url = require('url');
-const fs = require('fs');     // Módulo para ler arquivos do disco (usado para enviar o index.html)
-const path = require('path'); // Ajuda a montar o caminho do arquivo de forma segura
-const pool = require('./db'); // Procure o arquivo db.js que contém a configuração do banco de dados
+const fs = require('fs');
+const path = require('path');
+const pool = require('./db');
 
 //definição da porta do servidor
 const PORT = 3000;
